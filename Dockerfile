@@ -9,7 +9,7 @@ RUN mkdir /src
 COPY . /src
 WORKDIR /src
 
-RUN chmod 777 /usr/local/bin/chromedriver && pip install -r requirements.txt -i https://pypi.doubanio.com/simple/ --trusted-host pypi.doubanio.com
+RUN pip install -r requirements.txt -i https://pypi.doubanio.com/simple/ --trusted-host pypi.doubanio.com
 
 RUN find . -name "*.pyc" -delete
 
