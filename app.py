@@ -3,7 +3,7 @@ from word_translate import WordTranslate
 import os
 import pymongo
 
-client = pymongo.MongoClient(os.getenv('MONGO_HOST', '192.168.0.210'), os.getenv('MONGO_PORT', 27017))
+client = pymongo.MongoClient(os.getenv('MONGO_HOST', '192.168.0.210'), int(os.getenv('MONGO_PORT', 27017)))
 db = client.english_words_rate
 
 
