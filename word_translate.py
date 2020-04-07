@@ -48,8 +48,8 @@ class WordTranslate(object):
     # extract phonetic
     def phonetic(self, phonetics):
         if len(phonetics) >= 2:
-            us = phonetics[0].replace("[", '').replace("]", '').replace('ˈ', '')
-            usa = phonetics[1].replace("[", '').replace("]", '').replace('ˈ', '')
+            us = phonetics[0].replace("[", '/').replace("]", '/')
+            usa = phonetics[1].replace("[", '/').replace("]", '/')
             return {'us': us, 'usa': usa}
         return {'us': '', 'usa': ''}
 
